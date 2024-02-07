@@ -1,0 +1,152 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 11,
+
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces",
+    "network",
+    "battery",
+    "tray"
+  ],
+
+  "modules-center": ["custom/spotify"],
+
+  "modules-right": [
+    "custom/updates",
+    "backlight",
+    "pulseaudio",
+    "clock",
+    "custom/exit"
+  ],
+
+  "custom/launcher": {
+    "format": "<span color='#89DCEB'></span>",
+    "on-click": "pkill rofi || rofi -show drun --insensitive --allow-images"
+  },
+
+  "hyprland/workspaces": {
+    "all-outputs": false,
+    "active-only": "false",
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "󰙯",
+      "4": "4.",
+      "5": "5.",
+      "6": "6.",
+      "7": "7.",
+      "8": "8.",
+      "9": "9.",
+      "9": "10."
+    }
+    // "format-icons": {
+    //   "1": "",
+    //   "2": "",
+    //   "3": "ﭮ",
+    //   "4": "",
+    //   "5": "",
+    //   "6": "",
+    //   "7": "7.",
+    //   "8": "8.",
+    //   "9": "9.",
+    //   "10": "10.",
+    //   // "default": "",
+    //   // "active": ""
+    // }
+    // }
+  },
+
+  "network": {
+    "format-wifi": "󰖩 {essid}",
+    "format-ethernet": "󰈀 {essid}",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "󰖪 Disc.",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+    "on-click": "wezterm -e nmtui"
+  },
+
+  "battery": {
+    "states": {
+      "good": 80,
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": [
+      "CHARGE-IMMEDIATELY-NOW ",
+      "Charge-immediately ",
+      "Charge-quickly ",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+
+  "tray": {
+    "on-click": "",
+    "icon-size": 14,
+    "spacing": 8
+  },
+
+  "custom/spotify": {
+    "exec": "$HOME/.config/waybar/scripts/spotify.sh",
+    "max-length": 50,
+    "format": " {}",
+    "on-click": "playerctl play-pause",
+    "on-double-click": "playerctl next"
+  },
+
+  "custom/updates": {
+    "exec": "(checkupdates ; paru -Qua) | wc -l",
+    "interval": 12000,
+    "format": " {}",
+    "on-click": "wezterm start yay -Syu --noconfirm --devel"
+  },
+
+  "backlight": {
+    "on-click": "",
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"],
+    "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-down": "brightnessctl set 1%-"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 Muted",
+    "on-click": "pavucontrol",
+    "scroll-step": 1,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", "墳", ""]
+    }
+  },
+
+  "clock": {
+    "on-click": "",
+    "format": " {:%H:%M   %d/%m/%Y}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "custom/exit": {
+    "format": "<span color='#F38BA8'>⏻</span>",
+    "on-click": "wlogout"
+  }
+}
