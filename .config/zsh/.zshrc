@@ -126,3 +126,5 @@ alias nf='neofetch'
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 export PATH=$PATH:/home/sumit/.spicetify
+export GOPATH=$HOME/.go
+export PATH=$PATH:$(go env GOPATH)/bin

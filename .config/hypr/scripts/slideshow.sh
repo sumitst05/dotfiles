@@ -35,46 +35,47 @@ wallpaper_dir="$HOME/Pictures/Wallpapers/"
 interval=180
 while getopts ":hi:p:m:-:" opt; do
     case $opt in
-    -)
-        case "${OPTARG}" in
-        interval)
-            interval=$OPTIND
-            OPTIND=$((OPTIND + 1))
+        -)
+            case "${OPTARG}" in
+                interval)
+                    interval=$OPTIND
+                    OPTIND=$((OPTIND + 1))
+                    ;;
+                help)
+                    print_help
+                    exit 0
+                    ;;
+                path)
+                    wallpaper_dir=$OPTIND
+                    OPTIND=$((OPTIND + 1))
+                    ;;
+            esac
             ;;
-        help)
+        h)
             print_help
             exit 0
             ;;
-        path)
-            wallpaper_dir=$OPTIND
-            OPTIND=$((OPTIND + 1))
+        i)
+            interval=$OPTARG
             ;;
-        esac
-        ;;
-    h)
-        print_help
-        exit 0
-        ;;
-    i)
-        interval=$OPTARG
-        ;;
-    p)
-        wallpaper_dir=$OPTARG
-        ;;
-    m)
-        monitors=$OPTARG
-        ;;
+        p)
+            wallpaper_dir=$OPTARG
+            ;;
+        m)
+            monitors=$OPTARG
+            ;;
 
-    \?)
-        echo "Invalid option: -$OPTARG" >&2
-        exit 1
-        ;;
-    :)
-        echo "Option -$OPTARG requires an argument." >&2
-        exit 1
-        ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2
+            exit 1
+            ;;
+        :)
+            echo "Option -$OPTARG requires an argument." >&2
+            exit 1
+            ;;
     esac
 done
+
 if [ -z "$monitors" ]; then
     echo "Error: -m/--monitors option is required" >&2
     exit 1
