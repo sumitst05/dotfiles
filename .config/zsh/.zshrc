@@ -116,7 +116,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias drive='/mnt/Arch\ Data'
+alias drive='/mnt/arch-data'
 alias nf='neofetch'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
