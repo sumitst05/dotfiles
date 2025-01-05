@@ -128,3 +128,4 @@ alias nf='neofetch'
 export PATH=$PATH:/home/sumit/.spicetify
 export GOPATH=$HOME/.go
 export PATH=$PATH:$(go env GOPATH)/bin
+export TERM=wezterm
