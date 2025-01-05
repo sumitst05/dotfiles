@@ -25,7 +25,7 @@
   "menus.power.lowBatteryNotification": false,
   "menus.volume.raiseMaximumVolume": true,
   "theme.osd.orientation": "vertical",
-  "notifications.position": "top right",
+  "notifications.position": "top",
   "theme.bar.transparent": true,
   "theme.bar.buttons.style": "split",
   "theme.bar.menus.monochrome": false,
