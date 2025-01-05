@@ -19,7 +19,7 @@
   "menus.transition": "crossfade",
   "theme.bar.menus.menu.clock.scaling": 92,
   "theme.bar.menus.menu.notifications.scaling": 100,
-  "menus.clock.weather.location": "Los Angeles",
+  "menus.clock.weather.location": "401105",
   "menus.dashboard.powermenu.avatar.image": "/home/sumit/Pictures/profile.jpg",
   "theme.bar.menus.menu.dashboard.profile.size": "13.8em",
   "menus.power.lowBatteryNotification": false,
@@ -450,13 +450,15 @@
         "notifications"
       ],
       "right": [
+        "systray",
         "volume",
         "network",
         "bluetooth",
-        "systray",
         "clock"
       ]
     }
   },
-  "bar.customModules.updates.leftClick": "wezterm -e /usr/share/hyprpanel/scripts/runUpdates.sh -arch"
+  "bar.customModules.updates.leftClick": "wezterm -e /usr/share/hyprpanel/scripts/runUpdates.sh -arch",
+  "menus.clock.weather.key": "67796148dd158d092a72de60",
+  "menus.clock.weather.interval": 173000
 }
