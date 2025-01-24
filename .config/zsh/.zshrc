@@ -1,3 +1,4 @@
+
 if [[ $TERM == xterm-kitty || $TERM == wezterm ]]; then
     neofetch
 else
@@ -129,3 +130,4 @@ export PATH=$PATH:/home/sumit/.spicetify
 export GOPATH=$HOME/.go
 export PATH=$PATH:$(go env GOPATH)/bin
 export TERM=wezterm
+export LANG=en_US.UTF-8

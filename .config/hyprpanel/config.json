@@ -15,14 +15,14 @@
   "theme.bar.menus.menu.media.scaling": 100,
   "theme.font.name": "JetBrainsMono Nerd Font",
   "theme.font.label": "JetBrainsMono Nerd Font",
-  "theme.font.size": "1.0rem",
+  "theme.font.size": "0.9rem",
   "menus.transition": "crossfade",
   "theme.bar.menus.menu.clock.scaling": 92,
   "theme.bar.menus.menu.notifications.scaling": 100,
-  "menus.clock.weather.location": "401105",
+  "menus.clock.weather.location": "Mumbai",
   "menus.dashboard.powermenu.avatar.image": "/home/sumit/Pictures/profile.jpg",
   "theme.bar.menus.menu.dashboard.profile.size": "13.8em",
-  "menus.power.lowBatteryNotification": false,
+  "menus.power.lowBatteryNotification": true,
   "menus.volume.raiseMaximumVolume": true,
   "theme.osd.orientation": "vertical",
   "notifications.position": "top",
@@ -442,7 +442,8 @@
       "left": [
         "dashboard",
         "windowtitle",
-        "media"
+        "media",
+        "battery"
       ],
       "middle": [
         "updates",
@@ -451,14 +452,35 @@
       ],
       "right": [
         "systray",
-        "volume",
         "network",
+        "volume",
         "bluetooth",
         "clock"
       ]
     }
   },
   "bar.customModules.updates.leftClick": "wezterm -e /usr/share/hyprpanel/scripts/runUpdates.sh -arch",
-  "menus.clock.weather.key": "67796148dd158d092a72de60",
-  "menus.clock.weather.interval": 173000
+  "menus.clock.weather.key": "ce223cbc003f4fbab03133205251401",
+  "menus.clock.weather.interval": 1000,
+  "bar.customModules.netstat.label": false,
+  "bar.customModules.netstat.round": true,
+  "theme.bar.buttons.network.enableBorder": false,
+  "bar.network.truncation": false,
+  "bar.network.label": true,
+  "theme.bar.buttons.workspaces.smartHighlight": true,
+  "theme.bar.buttons.modules.netstat.enableBorder": false,
+  "menus.dashboard.shortcuts.left.shortcut2.command": "spotify",
+  "bar.bluetooth.label": true,
+  "bar.workspaces.reverse_scroll": false,
+  "menus.dashboard.directories.left.directory2.command": "nautilus Videos/",
+  "menus.dashboard.directories.right.directory3.command": "nautilus",
+  "menus.dashboard.directories.right.directory2.command": "nautilus Pictures/",
+  "menus.dashboard.directories.right.directory1.command": "nautilus Documents/",
+  "menus.dashboard.directories.left.directory3.command": "nautilus Documents/projects/",
+  "menus.dashboard.directories.left.directory1.command": "nautilus Downloads/",
+  "theme.bar.buttons.modules.weather.enableBorder": false,
+  "menus.dashboard.stats.enabled": false,
+  "theme.bar.buttons.modules.power.enableBorder": false,
+  "theme.bar.buttons.systray.enableBorder": false,
+  "menus.power.showLabel": true
 }
