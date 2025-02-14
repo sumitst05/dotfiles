@@ -28,7 +28,7 @@
 
   "hyprland/workspaces": {
     "all-outputs": false,
-    "active-only": "false",
+    "active-only": false,
     "format": "{icon}",
     "format-icons": {
       "1": "",
