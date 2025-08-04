@@ -131,3 +131,7 @@ export PATH=$PATH:/home/sumit/.spicetify
 export GOPATH=$HOME/.go
 export PATH=$PATH:$(go env GOPATH)/bin
 export LANG=en_US.UTF-8
+
+
+export ANDROID_HOME=/opt/android-sdk
+export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH
