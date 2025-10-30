@@ -19,9 +19,9 @@ return {
 	window_background_opacity = 1,
 	window_close_confirmation = "NeverPrompt",
 	window_padding = {
-		left = 0,
-		right = 0,
-		top = 0,
-		bottom = 0,
+		left = 8,
+		right = 8,
+		top = 8,
+		bottom = 8,
 	},
 }

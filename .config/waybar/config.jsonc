@@ -108,7 +108,7 @@
   },
 
   "custom/updates": {
-    "exec": "(checkupdates ; paru -Qua) | wc -l",
+    "exec": "(checkupdates; yay -Qum) | wc -l",
     "interval": 12000,
     "format": "󰇚 {}",
     "on-click": "wezterm start yay -Syu --noconfirm --devel",
