@@ -7,15 +7,15 @@
     "custom/launcher",
     "hyprland/workspaces",
     "network",
-    "battery",
+    "custom/qtpet",
     "tray",
   ],
 
   "modules-center": ["custom/spotify"],
 
   "modules-right": [
-    "custom/qtpet",
     "custom/updates",
+    "battery",
     "backlight",
     "pulseaudio",
     "clock",
@@ -35,29 +35,8 @@
       "1": "",
       "2": "",
       "3": "󰙯",
-      "4": "4.",
-      "5": "5.",
-      "6": "6.",
-      "7": "7.",
-      "8": "8.",
-      "9": "9.",
-      "9": "10.",
+      "default": "",
     },
-    // "format-icons": {
-    //   "1": "",
-    //   "2": "",
-    //   "3": "ﭮ",
-    //   "4": "",
-    //   "5": "",
-    //   "6": "",
-    //   "7": "7.",
-    //   "8": "8.",
-    //   "9": "9.",
-    //   "10": "10.",
-    //   // "default": "",
-    //   // "active": ""
-    // }
-    // }
   },
 
   "network": {
@@ -117,7 +96,7 @@
 
   "custom/qtpet": {
     "on-click": "$HOME/.config/hypr/scripts/pet.sh",
-    "format": "󰄛 ",
+    "format": "󰄛",
     "tooltip-format": "qtpet",
   },
 
@@ -158,15 +137,14 @@
       "weeks-pos": "right",
       "on-click": "mode",
       "format": {
-        "months": "<span color='#ffead3'><b>{}</b></span>",
-        "days": "<span color='#ecc6d9'><b>{}</b></span>",
-        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
-        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+        "months": "<span color='#cba6f7'><b>{}</b></span>",
+        "days": "<span color='#cdd6f4'><b>{}</b></span>",
+        "weeks": "<span color='#94e2d5'><b>W{}</b></span>",
+        "weekdays": "<span color='#fab387'><b>{}</b></span>",
+        "today": "<span color='#f38ba8'><b><u>{}</u></b></span>",
       },
     },
   },
-
   "custom/exit": {
     "format": "<span color='#F38BA8'>⏻</span>",
     "on-click": "wlogout",

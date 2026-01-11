@@ -12,18 +12,12 @@ window#waybar {
   color: #cdd6f4;
 }
 
-tooltip {
-  border-radius: 10px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #11111b;
-}
-
 #workspaces button {
-  padding: 5px;
-  margin-right: 5px;
+  all: unset;
+  padding: 0 10px;
+  margin: 3px 2px;
+  color: #cdd6f4;
 }
-
 #workspaces button.active {
   color: #89dceb;
 }
@@ -31,25 +25,17 @@ tooltip {
 #workspaces button.focused {
   color: #cdd6f4;
   background: #eba0ac;
-  border-radius: 10px;
 }
 
 #workspaces button.urgent {
   color: #11111b;
   background: #a6e3a1;
-  border-radius: 10px;
-}
-
-#workspaces button:hover {
-  background: #11111b;
-  color: #cdd6f4;
-  border-radius: 10px;
 }
 
 #custom-launcher {
+  margin-left: 8px;
   padding-right: 8px;
   padding-left: 8px;
-  border-radius: 10px;
 }
 
 #custom-exit,
@@ -71,28 +57,13 @@ tooltip {
 }
 
 #tray {
-  border-radius: 10px;
   font-size: 10px;
 }
 
 #workspaces {
-  border-radius: 10px;
   padding-right: 0px;
   padding-left: 5px;
   margin-left: 5px;
-}
-
-#custom-caffeine {
-  color: #89dceb;
-  border-radius: 10px 0px 0px 10px;
-  padding-right: 12px;
-}
-
-#inhibitor {
-  color: #f5e0dc;
-  border-radius: 10px 0px 0px 10px;
-  padding-right: 12px;
-  padding-left: 5px;
 }
 
 #custom-language {
@@ -101,7 +72,6 @@ tooltip {
 
 #custom-updates {
   color: #f5c2e7;
-  border-radius: 10px 10px 10px 10px;
 }
 
 #custom-qtpet {
@@ -111,25 +81,21 @@ tooltip {
 
 #cpu {
   padding: 0px 10px;
-  border-radius: 0px 10px 10px 0px;
   color: #f5c2e7;
 }
 
 #clock {
   color: #f9e2af;
-  border-radius: 10px;
   padding-right: 10px;
 }
 
 #network {
   color: #fab387;
-  border-radius: 10px 0 0 10px;
   margin-left: 5px;
 }
 
 #pulseaudio {
   color: #89b4fa;
-  border-radius: 0 10px 10px 0;
   margin-right: 5px;
 }
 
@@ -145,17 +111,13 @@ tooltip {
 
 #backlight {
   color: #cba6f7;
-  border-radius: 10px 0px 0px 10px;
   margin-left: 5px;
 }
 
 #custom-spotify {
-  background: rgba(21, 22, 30, 0);
   color: #cdd6f4;
 }
 
 #custom-exit {
-  background: rgba(21, 22, 30, 0);
   margin-right: 5px;
-  border-radius: 10px;
 }
