@@ -15,8 +15,9 @@ return {
 	window_decorations = "NONE",
 	enable_wayland = false,
 	enable_tab_bar = false,
+	enable_kitty_keyboard = true,
 	automatically_reload_config = true,
-	window_background_opacity = 1,
+	window_background_opacity = 0.8,
 	window_close_confirmation = "NeverPrompt",
 	window_padding = {
 		left = 8,

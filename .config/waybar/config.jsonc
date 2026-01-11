@@ -14,6 +14,7 @@
   "modules-center": ["custom/spotify"],
 
   "modules-right": [
+    "custom/qtpet",
     "custom/updates",
     "backlight",
     "pulseaudio",
@@ -114,6 +115,12 @@
     "on-click": "wezterm start yay -Syu --noconfirm --devel",
   },
 
+  "custom/qtpet": {
+    "on-click": "$HOME/.config/hypr/scripts/pet.sh",
+    "format": "󰄛 ",
+    "tooltip-format": "qtpet",
+  },
+
   "backlight": {
     "on-click": "",
     "device": "intel_backlight",
@@ -140,9 +147,24 @@
   },
 
   "clock": {
-    "on-click": "",
-    "format": " {:%H:%M   %d/%m/%Y}",
+    "interval": 1,
+    "format": " {:%I:%M:%S %p}",
+    "format-alt": " {:%Y-%m-%d}",
+    "tooltip": true,
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-click": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+      },
+    },
   },
 
   "custom/exit": {

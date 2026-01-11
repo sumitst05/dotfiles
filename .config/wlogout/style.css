@@ -1,44 +1,107 @@
+/* Catppuccin Mocha Colors */
+@define-color base      #1e1e2e;
+@define-color mantle    #181825;
+@define-color crust     #11111b;
+@define-color text      #cdd6f4;
+@define-color mauve     #cba6f7;
+@define-color red       #f38ba8;
+@define-color peach     #fab387;
+@define-color yellow    #f9e2af;
+@define-color green     #a6e3a1;
+@define-color blue      #89b4fa;
+@define-color flamingo  #f2cdcd;
+
 * {
-	background-image: none;
-}
-window {
-	background-color: rgba(12, 12, 12, 0.9);
-}
-button {
-    color: #FFFFFF;
-	background-color: #1E1E1E;
-	border-style: solid;
-	border-width: 2px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 25%;
+  background-image: none;
+  transition: all 0.2s cubic-bezier(0.55, 0.05, 0.67, 0.19);
 }
 
-button:focus, button:active, button:hover {
-	background-color: #3700B3;
-	outline-style: none;
+window {
+  background-color: rgba(30, 30, 46, 0.8);
+}
+
+button {
+  color: @text;
+  background-color: @mantle;
+  border-style: solid;
+  border-width: 2px;
+  border-color: @mauve;
+  border-radius: 20px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  background-size: 25%;
+}
+
+/* Hover Effects - Dynamic Colors */
+button:focus {
+  outline-style: none;
+}
+button:active,
+button:hover {
+  color: @base;
+  outline-style: none;
+  border-color: @text;
+}
+
+#lock:hover {
+  background-color: @flamingo;
+}
+#logout:hover {
+  background-color: @peach;
+}
+#suspend:hover {
+  background-color: @green;
+}
+#hibernate:hover {
+  background-color: @yellow;
+}
+#shutdown:hover {
+  background-color: @red;
+}
+#reboot:hover {
+  background-color: @blue;
 }
 
 #lock {
-    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+  background-image: image(
+    url("/usr/share/wlogout/icons/lock.png"),
+    url("/usr/local/share/wlogout/icons/lock.png")
+  );
 }
 
 #logout {
-    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+  background-position: 55% 35%;
+  background-image: image(
+    url("/usr/share/wlogout/icons/logout.png"),
+    url("/usr/local/share/wlogout/icons/logout.png")
+  );
 }
 
 #suspend {
-    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+  background-image: image(
+    url("/usr/share/wlogout/icons/suspend.png"),
+    url("/usr/local/share/wlogout/icons/suspend.png")
+  );
 }
 
 #hibernate {
-    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+  background-image: image(
+    url("/usr/share/wlogout/icons/hibernate.png"),
+    url("/usr/local/share/wlogout/icons/hibernate.png")
+  );
 }
 
 #shutdown {
-    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+  background-image: image(
+    url("/usr/share/wlogout/icons/shutdown.png"),
+    url("/usr/local/share/wlogout/icons/shutdown.png")
+  );
 }
 
 #reboot {
-    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+  background-image: image(
+    url("/usr/share/wlogout/icons/reboot.png"),
+    url("/usr/local/share/wlogout/icons/reboot.png")
+  );
 }

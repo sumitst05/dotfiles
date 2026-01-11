@@ -8,7 +8,6 @@ This repository contains my personal dotfiles, configuration files, and scripts 
 
 ![stuff](https://github.com/sumitst05/dotfiles/assets/106669732/4bd927fc-ced7-4892-aba1-fca2335d975d)
 
-
 ## Usage
 
 ### Clone the Repository

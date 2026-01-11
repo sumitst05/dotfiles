@@ -120,6 +120,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias drive='/mnt/arch-data'
 alias nf='neofetch'
+# dashboard for zram and swap
+alias memdash='echo "RAM Usage" && free -h && echo "" && echo "Swap Priority" && swapon --show && echo "" && echo "zram Stats" && zramctl'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ./.p10k.zsh
@@ -135,3 +137,6 @@ export LANG=en_US.UTF-8
 
 export ANDROID_HOME=/opt/android-sdk
 export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH
+
+export GRADLE_HOME=/usr/local/gradle/gradle-9.2.1
+export PATH=$PATH:$GRADLE_HOME/bin

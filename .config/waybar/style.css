@@ -55,6 +55,7 @@ tooltip {
 #custom-exit,
 #custom-language,
 #custom-updates,
+#custom-qtpet,
 #custom-caffeine,
 #clock,
 #battery,
@@ -101,7 +102,11 @@ tooltip {
 #custom-updates {
   color: #f5c2e7;
   border-radius: 10px 10px 10px 10px;
-  margin-left: 5px;
+}
+
+#custom-qtpet {
+  font-size: 14pt;
+  color: #fdfd96;
 }
 
 #cpu {
