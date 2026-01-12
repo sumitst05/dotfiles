@@ -10,7 +10,11 @@
 }
 
 window#waybar {
-  background: alpha(@mantle, 0.4);
+  background-image: linear-gradient(
+		45deg,
+    alpha(@lavender, 0.12),
+    alpha(@teal, 0.12)
+  );
   border: 1px solid alpha(@lavender, 0.4);
   box-shadow: inset 0 0 0 1px alpha(@lavender, 0.05);
   transition-property: background-color;
@@ -60,7 +64,7 @@ window#waybar {
 #backlight {
   padding: 0px 10px;
   margin: 3px 0px;
-	color: @text;
+  color: @text;
 }
 
 #tray {
@@ -124,6 +128,6 @@ window#waybar {
 }
 
 #custom-exit {
-	color: @red;
+  color: @red;
   margin-right: 8px;
 }
