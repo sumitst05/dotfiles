@@ -2,7 +2,7 @@
 
 * {
   border: none;
-  border-radius: 0;
+  border-radius: 0px;
   font-family: "JetBrainsMono Nerd Font";
   font-size: 10pt;
   font-weight: bold;
@@ -12,6 +12,7 @@
 window#waybar {
   background: alpha(@mantle, 0.4);
   border: 1px solid alpha(@lavender, 0.4);
+  box-shadow: inset 0 0 0 1px alpha(@lavender, 0.05);
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -20,11 +21,11 @@ window#waybar {
   all: unset;
   padding: 0 10px;
   margin: 3px 2px;
-  color: @text;
+  color: @subtext1;
 }
 
 #workspaces button.active {
-  color: @sky;
+  color: @lavender;
 }
 
 #workspaces button.focused {
@@ -59,6 +60,7 @@ window#waybar {
 #backlight {
   padding: 0px 10px;
   margin: 3px 0px;
+	color: @text;
 }
 
 #tray {
@@ -76,12 +78,12 @@ window#waybar {
 }
 
 #custom-updates {
-  color: @pink;
+  color: @flamingo;
 }
 
 #custom-qtpet {
   font-size: 14pt;
-  color: @yellow;
+  color: @flamingo;
 }
 
 #cpu {
@@ -90,17 +92,17 @@ window#waybar {
 }
 
 #clock {
-  color: @yellow;
+  color: @rosewater;
   padding-right: 10px;
 }
 
 #network {
-  color: @peach;
+  color: @mauve;
   margin-left: 5px;
 }
 
 #pulseaudio {
-  color: @blue;
+  color: @sapphire;
   margin-right: 5px;
 }
 
@@ -109,12 +111,12 @@ window#waybar {
 }
 
 #battery {
-  color: @green;
+  color: @teal;
   border-radius: 0px 10px 10px 0px;
 }
 
 #backlight {
-  color: @mauve;
+  color: @lavender;
 }
 
 #custom-spotify {
@@ -122,5 +124,6 @@ window#waybar {
 }
 
 #custom-exit {
+	color: @red;
   margin-right: 8px;
 }
