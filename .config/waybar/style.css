@@ -1,15 +1,17 @@
+@import "mocha.css";
+
 * {
   border: none;
   border-radius: 0;
-  font-family: JetBrainsMono Nerd Font;
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 10pt;
   font-weight: bold;
   min-height: 0;
 }
 
 window#waybar {
-  background: rgba(23, 23, 35, 0.65);
-  border: 1px solid rgba(180, 190, 254, 0.15);
+  background: alpha(@mantle, 0.4);
+  border: 1px solid alpha(@lavender, 0.2);
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -18,20 +20,21 @@ window#waybar {
   all: unset;
   padding: 0 10px;
   margin: 3px 2px;
-  color: #cdd6f4;
+  color: @text;
 }
+
 #workspaces button.active {
-  color: #89dceb;
+  color: @sky;
 }
 
 #workspaces button.focused {
-  color: #cdd6f4;
-  background: #eba0ac;
+  color: @text;
+  background: @maroon;
 }
 
 #workspaces button.urgent {
-  color: #11111b;
-  background: #a6e3a1;
+  color: @crust;
+  background: @green;
 }
 
 #custom-launcher {
@@ -59,67 +62,65 @@ window#waybar {
 }
 
 #tray {
+  margin-left: 5px;
   font-size: 10px;
 }
 
 #workspaces {
   padding-right: 0px;
   padding-left: 5px;
-  margin-left: 5px;
 }
 
 #custom-language {
-  color: #f38ba8;
+  color: @red;
 }
 
 #custom-updates {
-  color: #f5c2e7;
+  color: @pink;
 }
 
 #custom-qtpet {
   font-size: 14pt;
-  color: #fdfd96;
+  color: @yellow;
 }
 
 #cpu {
   padding: 0px 10px;
-  color: #f5c2e7;
+  color: @pink;
 }
 
 #clock {
-  color: #f9e2af;
+  color: @yellow;
   padding-right: 10px;
 }
 
 #network {
-  color: #fab387;
+  color: @peach;
   margin-left: 5px;
 }
 
 #pulseaudio {
-  color: #89b4fa;
+  color: @blue;
   margin-right: 5px;
 }
 
 #memory {
-  color: #7dc4e4;
+  color: @sky;
 }
 
 #battery {
-  color: #a6e3a1;
+  color: @green;
   border-radius: 0px 10px 10px 0px;
-  margin-right: 5px;
 }
 
 #backlight {
-  color: #cba6f7;
-  margin-left: 5px;
+  color: @mauve;
 }
 
 #custom-spotify {
-  color: #cdd6f4;
+  color: @text;
 }
 
 #custom-exit {
-  margin-right: 5px;
+  margin-right: 8px;
 }
