@@ -39,28 +39,27 @@ button:focus {
 }
 button:active,
 button:hover {
-  color: @base;
   outline-style: none;
   border-color: @text;
 }
 
 #lock:hover {
-  background-color: @flamingo;
+  background-color: alpha(@flamingo, 0.6);
 }
 #logout:hover {
-  background-color: @peach;
+  background-color: alpha(@peach, 0.6);
 }
 #suspend:hover {
-  background-color: @green;
+  background-color: alpha(@green, 0.6);
 }
 #hibernate:hover {
-  background-color: @yellow;
+  background-color: alpha(@yellow, 0.6);
 }
 #shutdown:hover {
-  background-color: @red;
+  background-color: alpha(@red, 0.6);
 }
 #reboot:hover {
-  background-color: @blue;
+  background-color: alpha(@blue, 0.6);
 }
 
 #lock {

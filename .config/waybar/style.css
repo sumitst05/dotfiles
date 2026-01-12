@@ -11,7 +11,7 @@
 
 window#waybar {
   background: alpha(@mantle, 0.4);
-  border: 1px solid alpha(@lavender, 0.2);
+  border: 1px solid alpha(@lavender, 0.4);
   transition-property: background-color;
   transition-duration: 0.5s;
 }
