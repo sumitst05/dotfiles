@@ -1,6 +1,7 @@
 configuration{
 	modi: "run,drun";
-	icon-theme: "Oranchelo";
+	icon-theme: "Tela-purple-dark";
+	monitor: "primary";
 	show-icons: true;
 	terminal: "wezterm";
 	drun-display-format: "{icon} {name}";
@@ -14,6 +15,9 @@ configuration{
 	display-Network: " 󰤨  Network";
 	display-filebrowser: "  Filebrowser";
 	sidebar-mode: true;
+	matching: "fuzzy";
+	tokenize: true;
+	hover-select: true;
 }
 
 @theme "catppuccin-mocha"

@@ -1,29 +1,29 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 11,
+  "height": 32,
 
   "modules-left": [
     "custom/launcher",
     "hyprland/workspaces",
     "network",
-    "custom/qtpet",
     "tray",
+    "custom/qtpet",
   ],
 
   "modules-center": ["custom/spotify"],
 
   "modules-right": [
     "custom/updates",
-		"battery",
     "backlight",
     "pulseaudio",
+    "battery",
     "clock",
     "custom/exit",
   ],
 
   "custom/launcher": {
-		"tooltip": false,
+    "tooltip": false,
     "format": "<span color='#89DCEB'></span>",
     "on-click": "pkill rofi || rofi -show drun --insensitive --allow-images",
   },

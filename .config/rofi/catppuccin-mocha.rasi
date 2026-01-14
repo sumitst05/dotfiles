@@ -112,3 +112,8 @@ textbox {
 	text-color: @blue;
 	background-color: transparent;
 }
+
+error-message {
+	padding: 15px;
+	background-color: transparent;
+}
