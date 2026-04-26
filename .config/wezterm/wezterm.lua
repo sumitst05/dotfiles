@@ -11,6 +11,10 @@ return {
 	font_size = 10,
 	bold_brightens_ansi_colors = true,
 	color_scheme = "catppuccin-mocha",
+	colors = {
+		cursor_bg = "rgba(180, 190, 254, 0.5)",
+		cursor_fg = "black",
+	},
 	window_decorations = "NONE",
 	enable_wayland = false,
 	enable_tab_bar = false,
