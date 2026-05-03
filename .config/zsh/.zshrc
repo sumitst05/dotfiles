@@ -1,9 +1,9 @@
 export ZDOTDIR=/home/sumit/.config/zsh
 
 if [[ $TERM == xterm-kitty || $TERM == wezterm ]]; then
-    neofetch
+  neofetch
 else
-    neofetch --ascii "$ZDOTDIR"/.arch.txt
+  neofetch --ascii "$ZDOTDIR"/.arch.txt
 fi
 
 [[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh
