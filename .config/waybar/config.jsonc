@@ -89,7 +89,7 @@
   },
 
   "custom/updates": {
-    "exec": "(checkupdates; yay -Qum) | wc -l",
+    "exec": "(checkupdates; pacmaan -Qum) | wc -l",
     "interval": 12000,
     "format": "󰇚 {}",
     "on-click": "wezterm start yay -Syu --noconfirm --devel",
